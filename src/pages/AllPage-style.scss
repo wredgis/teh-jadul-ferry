@@ -1,0 +1,40 @@
+@import '../variables/Warna';
+
+  // Styles pour H1
+  h1 {
+    font-size: 2.5em;
+    color: $txt-in-general-each-page;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  .title1-style {
+    background-color: #D7EBBA;
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+  // Styles pour H2
+  h2 {
+    font-size: 1.8em;
+    color: darken($txt-in-general-each-page, 10%);
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-bottom: 2px solid $header-footer_bgcolor;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+  }
+
+  // Styles pour les paragraphes
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: lighten($txt-in-general-each-page, 10%);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }
+

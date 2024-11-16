@@ -1,0 +1,114 @@
+.produks-page {
+    text-align: center;
+
+    .intro, .cta {
+        text-align: center;
+    }
+
+    .products {
+        margin-top: 40px;
+    }
+
+    .product-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 30px;
+        align-items: stretch; /* Garantit que tous les éléments aient la même hauteur */
+    }
+
+    .product-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 25%;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        height: auto; /* Fixe une hauteur uniforme pour chaque produit */
+        box-sizing: border-box;
+        position: relative;
+        transition: transform 0.3s ease;
+        overflow: visible; /* Pour éviter que les images ou textes ne dépassent */
+    }
+
+    .product-item:hover {
+        transform: scale(1.05);
+    }
+
+    .product-image img {
+        width: 100%;
+        height: 200px; /* Fixe une hauteur pour les images */
+        object-fit: cover; /* Assure que l'image garde ses proportions sans déformation */
+        border-radius: 8px;
+    }
+
+    .product-info {
+        text-align: center;
+        flex-grow: 1; /* Permet au contenu de s'étendre de manière égale */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .product-info h3 {
+        font-size: 1.5em;
+        margin-top: 10px;
+        color: #333;
+    }
+
+    .product-info p {
+        font-size: 1em;
+        color: #777;
+        margin-top: 10px;
+    }
+
+    .price {
+        font-size: 1.2em;
+        color: #333;
+        margin-top: 10px;
+        display: block;
+        font-weight: bold;
+    }
+
+    .add-to-cart {
+        background-color: #FFA6AC;
+        color: white;
+        border: none;
+        padding: 15px 30px; /* Augmente la taille pour tester */
+        margin-top: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        z-index: 10; /* S'assurer qu'il est au-dessus des autres éléments */
+    }
+
+    .add-to-cart:hover {
+        background-color: #ff8c99;
+    }
+
+
+    /* Media Query pour les petits écrans */
+    @media (max-width: 768px) {
+        .product-item {
+            width: 48%;
+        }
+
+        .product-list {
+            gap: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .product-item {
+            width: 100%;
+        }
+
+        .product-list {
+            gap: 10px;
+        }
+    }
+}

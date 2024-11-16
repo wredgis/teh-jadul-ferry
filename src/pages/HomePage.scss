@@ -1,0 +1,37 @@
+@import '../variables/Warna';
+
+.homepage {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+
+  .intro, .history, .types, .cta {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .types ul {
+    list-style-type: none; 
+    padding: 0; 
+  }
+  
+  .types li {
+    margin-bottom: 10px; 
+  }
+  
+  .cta-button {
+    background-color: $header-footer_bgcolor;
+    color: $txt-in-general-each-page;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    border-radius: 30px;
+
+    &:hover {
+      background-color: $hover;
+      color: #333; 
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../variables/Warna';
+
+footer {
+    height: 200px;
+    margin-top: 10rem;
+    background-color: $header-footer_bgcolor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; // Permet au logo d’être positionné relativement au footer
+}
+
+.logo-footer {
+    height: 200px; 
+    position: absolute;
+    top: -100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; // Assure que le logo est au-dessus du contenu du footer
+}
+
+footer .nav-link {
+    margin-top: 0.1rem; // Ajuste la position du lien pour ne pas chevaucher le logo
+    color: $txt-in-general-each-page;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px;
+    // border: 1px solid $txt-in-general-each-page;
+    border-radius: 30px;
+}
+footer .nav-link:hover {
+    background-color: #FFA6AC;
+}
+
